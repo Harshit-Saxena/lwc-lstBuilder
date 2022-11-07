@@ -11,7 +11,8 @@
               <tr class="slds-line-height_reset">
                 <th class="" scope="col" style="width: 3.75rem"></th>
                 <th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col">
-                  <a class="slds-th__action slds-text-link_reset" href="javascript:void(0);" role="button" tabindex="-1">
+                  <a class="slds-th__action slds-text-link_reset" href="javascript:void(0);" role="button"
+                    tabindex="-1">
                     <span class="slds-assistive-text">Sort by: </span>
                     <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
                       <span class="slds-truncate" title="Name">Apartment Name</span>
@@ -19,14 +20,16 @@
                     </div>
                   </a>
                   <div class="slds-resizable">
-                    <input type="range" aria-label="Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-65" max="1000" min="20" tabindex="-1" />
+                    <input type="range" aria-label="Name column width" class="slds-resizable__input slds-assistive-text"
+                      id="cell-resize-handle-65" max="1000" min="20" tabindex="-1" />
                     <span class="slds-resizable__handle">
                       <span class="slds-resizable__divider"></span>
                     </span>
                   </div>
                 </th>
                 <th aria-label="Phone" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col">
-                  <a class="slds-th__action slds-text-link_reset" href="javascript:void(0);" role="button" tabindex="-1">
+                  <a class="slds-th__action slds-text-link_reset" href="javascript:void(0);" role="button"
+                    tabindex="-1">
                     <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
                       <span class="slds-truncate" title="Phone">Type</span>
                       <span class="slds-icon_container slds-icon-utility-arrowdown"></span>
@@ -39,7 +42,8 @@
               <template for:each={rooms} for:item="rms">
                 <tr key={rms.Id} aria-selected="false" class="slds-hint-parent">
                   <td class="slds-text-align_right" role="gridcell">
-                    <lightning-input type="checkbox-button" label="select" variant="label-hidden" onchange={handleSel} name={rms.Id}></lightning-input>
+                    <lightning-input type="checkbox-button" label="select" variant="label-hidden" onchange={handleSel}
+                      name={rms.Id}></lightning-input>
                   </td>
                   <td role="gridcell">
                     <div class="slds-cell-wrap" title="Apartment Name"> {rms.Name} </div>
@@ -103,7 +107,7 @@
             <div class="slds-form-element">
               <label class="slds-form-element__label" for="form-element-id-02">Billing City</label>
               <div class="slds-form-element__control">
-                <input type="text" id="form-element-id-02" required="" class="slds-input"/>
+                <input type="text" id="form-element-id-02" required="" class="slds-input" />
               </div>
             </div>
           </div>
@@ -121,7 +125,7 @@
             <div class="slds-form-element">
               <label class="slds-form-element__label" for="form-element-id-04">Billing Zip/Postal Code</label>
               <div class="slds-form-element__control">
-                <input type="text" id="form-element-id-04" required="" class="slds-input"/>
+                <input type="text" id="form-element-id-04" required="" class="slds-input" />
               </div>
             </div>
           </div>
@@ -136,6 +140,7 @@
         </div>
       </div>
     </fieldset>
-    <lightning-button variant="base" label="Back" title="back" onclick={handleBack} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="base" label="Back" title="back" onclick={handleBack} class="slds-m-left_x-small">
+    </lightning-button>
   </template>
 </template>
